@@ -9,7 +9,7 @@ import InterpretersProfile from './screens/InterpretersProfile';
 import ReviewScreen from './screens/ReviewScreen';
 import WriteReview from './screens/WriteReview';
 import Appoinment from './screens/Appoinment';
-// import PaymentMethod from './screens/PaymentMethod';
+import PaymentMethod from './screens/PaymentMethod';
 
 
 const StackNavigator = () => {
@@ -26,7 +26,7 @@ const StackNavigator = () => {
             <Stack.Screen name='Reviews' component={ReviewScreen} options={{ headerShown: false }}/>
             <Stack.Screen name='Write' component={WriteReview} options={{ headerShown: false }}/>
             <Stack.Screen name='Appoinment' component={Appoinment} options={{ headerShown: false }}/>
-            {/* <Stack.Screen name='PaymentMethod' component={PaymentMethod} options={{ headerShown: false }}/> */}
+            <Stack.Screen name='PaymentMethod' component={PaymentMethod} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

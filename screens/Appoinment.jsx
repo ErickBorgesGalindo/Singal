@@ -101,7 +101,7 @@ const Appoinment = () => {
             </View>
 
             <View style={{ marginTop: 40 }}>
-                <CustomBtn title={'Siguiente'} onPress={() => console.log('jotos')} />
+                <CustomBtn title={'Siguiente'} onPress={() => navigation.navigate('PaymentMethod')} />
             </View>
 
 
