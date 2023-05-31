@@ -15,7 +15,7 @@ export default BackBtn
 const styles = StyleSheet.create({
     backContainer: {
         position: 'absolute',
-        top: '07%',
+        top: '20%',
         left: '5%',
         alignItems: 'center',
         justifyContent: 'center',

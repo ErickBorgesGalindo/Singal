@@ -25,9 +25,17 @@ export default StyleSheet.create({
         fontWeight: 300,
         color: '#FF206E'
     },
+    
+    description: {
+        textAlign: 'justify',
+        marginTop: 20,
+        marginLeft: 30,
+        marginRight: 30,
+        fontSize: 17,
+        color: '#fff',
+    },
 
     // background styles
-
     mainBackground: {
         flex: 1,
         backgroundColor: '#0C0F0A'
