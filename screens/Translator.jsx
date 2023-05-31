@@ -6,7 +6,7 @@ import { Camera } from 'expo-camera';
 import { useNavigation } from '@react-navigation/native';
 import * as MediaLibrary from 'expo-media-library';
 import { Octicons } from '@expo/vector-icons';
-import Tts from 'react-native-tts'
+// import Tts from 'react-native-tts'
 
 const Translator = () => {
     const navigation = useNavigation();
@@ -24,9 +24,9 @@ const Translator = () => {
         })();
     }, [])
 
-    const handleVoice = () => {
-        Tts.speak('Hola, mi nombre es A L E C S');
-    }
+    // const handleVoice = () => {
+    //     Tts.speak('Hola, mi nombre es A L E C S');
+    // }
 
     return (
 
@@ -49,7 +49,7 @@ const Translator = () => {
             </View>
 
             <View style={{justifyContent: 'center', alignSelf: 'center', alignItems: 'center' }}>
-                <Pressable onPress={()=>handleVoice()}>
+                <Pressable onPress={()=>console.log('Pachurradito')}>
                     <Octicons name="unmute" size={24} color="white" />
                 </Pressable>
             </View>
