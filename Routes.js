@@ -10,6 +10,7 @@ import ReviewScreen from './screens/ReviewScreen';
 import WriteReview from './screens/WriteReview';
 import Appoinment from './screens/Appoinment';
 import PaymentMethod from './screens/PaymentMethod';
+import DataCard from './screens/DataCard';
 
 
 const StackNavigator = () => {
@@ -27,6 +28,7 @@ const StackNavigator = () => {
             <Stack.Screen name='Write' component={WriteReview} options={{ headerShown: false }}/>
             <Stack.Screen name='Appoinment' component={Appoinment} options={{ headerShown: false }}/>
             <Stack.Screen name='PaymentMethod' component={PaymentMethod} options={{ headerShown: false }}/>
+            <Stack.Screen name='DataCard' component={DataCard} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
