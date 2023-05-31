@@ -2,6 +2,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomeScreen from './screens/HomeScreen';
+import ClassScren from './screens/ClassScren';
 
 
 const StackNavigator = () => {
@@ -11,6 +12,7 @@ const StackNavigator = () => {
     <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }}/>
+            <Stack.Screen name='Class' component={ClassScren} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
