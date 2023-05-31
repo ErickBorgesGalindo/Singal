@@ -60,7 +60,7 @@ const HomeScreen = () => {
             {/* Contact a translator */}
             <View style={styles.todayTextView}>
                 <Text style={Styles.text}>Contacta a un traductor </Text>
-                <Text style={Styles.textColor}>Ver todos</Text>
+                <Text style={Styles.textColor} onPress={() => navigation.navigate('Interpreters')}>Ver todos</Text>
             </View>
             {/* Contact a translator cards */}
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginRight: 20 , marginBottom:40}}>
