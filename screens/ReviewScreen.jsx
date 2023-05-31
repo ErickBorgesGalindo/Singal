@@ -80,7 +80,7 @@ const ReviewScreen = () => {
             </View>
             {/* Button */}
             <View style={{ top: '-45%' }}>
-                <CustomBtn title='Write a Review' onPress={() => navigation.navigate('Write')} />
+                <CustomBtn title='Escribe tu reseña' onPress={() => navigation.navigate('Write')} />
             </View>
         </View>
     )

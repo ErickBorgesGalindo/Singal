@@ -98,7 +98,7 @@ const InterpretersProfile = () => {
 
             {/* Button */}
             <View style={{ top: '160%' }}>
-                <CustomBtn title='Hacer una cita' onPress={() => navigation.navigate('Reviews')} />
+                <CustomBtn title='Hacer una cita' onPress={() => navigation.navigate('Appoinment')} />
             </View>
         </View>
     )
