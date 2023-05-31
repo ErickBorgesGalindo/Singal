@@ -35,6 +35,15 @@ export default StyleSheet.create({
         color: '#fff',
     },
 
+    sectionName: {
+        marginTop: 30,
+        alignSelf: 'center',
+        fontSize: 30,
+        fontWeight: '900',
+        color: '#fff',
+        textTransform:'uppercase'
+    },
+
     // background styles
     mainBackground: {
         flex: 1,
