@@ -34,7 +34,7 @@ const InterpretersProfile = () => {
             <View style={styles.ViewContainer}>
                 {/* Title and call */}
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-                    <View style={{ flexDirection: 'col' }}>
+                    <View>
                         <Text style={{ ...Styles.text, fontSize: 30, marginTop: 17, marginLeft: 30, }}>Richard Will</Text>
                         <Text style={{ ...Styles.textColor, marginTop: 8, marginLeft: 30 }}>Functional Strength</Text>
                     </View>

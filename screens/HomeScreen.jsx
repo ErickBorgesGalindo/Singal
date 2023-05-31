@@ -27,7 +27,7 @@ const HomeScreen = () => {
                     text='Usa el trauctor'
                     subtitle={'De señas a texto - audio'}
                     ImageSource={require('../images/00_image.jpg')}
-                    onPress={() => console.log('pachurrao')} />
+                    onPress={() => navigation.navigate('Translate')} />
             </View>
 
             {/* Can you learn */}
@@ -69,7 +69,7 @@ const HomeScreen = () => {
                     subtitle='3 años de experiencia'
                     ImageSource={require('../images/04_image.jpg')}
                     isPremium={false}
-                    onPress={() => console.log('Papoi')} />
+                    onPress={() => navigation.navigate('Profile')} />
 
                 <CardViewSquare
                     text='Melissa Gonzáles'
