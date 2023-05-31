@@ -24,8 +24,8 @@ const InterpretersProfile = () => {
             console.log(error)
         }
     };
-  return (
-    <View>
+    return (
+        <View>
             {/* First Image, TOP */}
             <Image style={styles.Img} source={require('../images/00_image.jpg')} />
             {/* Back Icon */}
@@ -80,7 +80,7 @@ const InterpretersProfile = () => {
                             <Text>174</Text>
                         </View>
                     </View>
-                    <Pressable style={{ marginTop: 30, marginRight: 30 }} onPress={() => console.log('Pucharrado')}>
+                    <Pressable style={{ marginTop: 30, marginRight: 30 }} onPress={() => navigation.navigate('Reviews')}>
                         <Text style={Styles.textColor}>Read all reviews</Text>
                     </Pressable>
                 </View>
@@ -101,7 +101,7 @@ const InterpretersProfile = () => {
                 <CustomBtn title='Hacer una cita' onPress={() => navigation.navigate('Reviews')} />
             </View>
         </View>
-  )
+    )
 }
 
 export default InterpretersProfile

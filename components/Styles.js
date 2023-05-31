@@ -44,6 +44,18 @@ export default StyleSheet.create({
         textTransform:'uppercase'
     },
 
+    // Components styles
+    tabView:{
+        flexDirection:'row',
+        justifyContent: 'center',
+        alignSelf:'center',
+        backgroundColor: '#2C2C2E',
+        width:'91%',
+        borderRadius: 20,
+        height: 28,
+        marginTop: 40,
+    },
+
     // background styles
     mainBackground: {
         flex: 1,

@@ -6,6 +6,8 @@ import ClassScren from './screens/ClassScren';
 import VideoScreen from './screens/Video';
 import Interpreters from './screens/Interpreters';
 import InterpretersProfile from './screens/InterpretersProfile';
+import ReviewScreen from './screens/ReviewScreen';
+import WriteReview from './screens/WriteReview';
 
 
 const StackNavigator = () => {
@@ -19,7 +21,8 @@ const StackNavigator = () => {
             <Stack.Screen name='Video' component={VideoScreen} options={{ headerShown: false }}/>
             <Stack.Screen name='Interpreters' component={Interpreters} options={{ headerShown: false }}/>
             <Stack.Screen name='Profile' component={InterpretersProfile} options={{ headerShown: false }}/>
-
+            <Stack.Screen name='Reviews' component={ReviewScreen} options={{ headerShown: false }}/>
+            <Stack.Screen name='Write' component={WriteReview} options={{ headerShown: false }}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
