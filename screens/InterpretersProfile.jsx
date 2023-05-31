@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     ViewContainer: {
         position: 'absolute',
         top: '93%',
-        width: 390,
+        width: '100%',
         height: 600,
         borderRadius: 25,
         backgroundColor: '#1C1C1E',
