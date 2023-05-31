@@ -5,6 +5,7 @@ import HomeScreen from './screens/HomeScreen';
 import ClassScren from './screens/ClassScren';
 import VideoScreen from './screens/Video';
 import Interpreters from './screens/Interpreters';
+import InterpretersProfile from './screens/InterpretersProfile';
 
 
 const StackNavigator = () => {
@@ -17,6 +18,8 @@ const StackNavigator = () => {
             <Stack.Screen name='Class' component={ClassScren} options={{ headerShown: false }}/>
             <Stack.Screen name='Video' component={VideoScreen} options={{ headerShown: false }}/>
             <Stack.Screen name='Interpreters' component={Interpreters} options={{ headerShown: false }}/>
+            <Stack.Screen name='Profile' component={InterpretersProfile} options={{ headerShown: false }}/>
+
         </Stack.Navigator>
     </NavigationContainer>
   )

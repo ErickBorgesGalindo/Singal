@@ -28,7 +28,7 @@ const Interpreters = () => {
                     description='Lic. En Comunicación'
                     experience='5 años de experiencia'
                     score='4.9'
-                    onPress={() => navigation.navigate('TrainerDetail')} />
+                    onPress={() => navigation.navigate('Profile')} />
 
                 <TeacherCard
                     ImageSource={require('../images/04_image.jpg')}
