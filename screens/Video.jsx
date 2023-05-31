@@ -73,7 +73,7 @@ const VideoScreen = () => {
         <Video
           ref={video}
           style={styles.video}
-          source={require("../demo.mp4")}
+          source={require("../demo1.mp4")}
           // source={{uri:"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"}}
           useNativeControls={false}
           resizeMode='cover'

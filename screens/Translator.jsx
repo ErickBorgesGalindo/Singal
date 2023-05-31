@@ -6,6 +6,8 @@ import { Camera } from 'expo-camera';
 import { useNavigation } from '@react-navigation/native';
 import * as MediaLibrary from 'expo-media-library';
 import { Octicons } from '@expo/vector-icons';
+import { Audio } from 'expo-av';
+
 // import Tts from 'react-native-tts'
 
 const Translator = () => {
@@ -15,6 +17,7 @@ const Translator = () => {
     const [type, setType] = useState(Camera.Constants.Type.back);
     const [flash, setFlash] = useState(Camera.Constants.FlashMode.off);
     const cameraRef = useRef(null)
+    const [press, setPress] = useState(false)
 
     useEffect(() => {
         (async () => {
@@ -23,6 +26,22 @@ const Translator = () => {
             setHasCameraPermission(cameraStatus.status === 'granted');
         })();
     }, [])
+
+    const handlePress = () => {
+        setPress(!press)
+    };
+
+    const playSound = async () => {
+        const soundObject = new Audio.Sound();
+        
+        try {
+          await soundObject.loadAsync(require('../audio.mp3'));
+          await soundObject.playAsync();
+          // Opcional: Puedes utilizar await soundObject.playFromPositionAsync(0) si deseas reproducir el sonido desde un punto específico.
+        } catch (error) {
+          console.log(error);
+        }
+      };
 
     // const handleVoice = () => {
     //     Tts.speak('Hola, mi nombre es A L E C S');
@@ -42,17 +61,24 @@ const Translator = () => {
                     ref={cameraRef} />
             </View>
 
-            <View style={{ backgroundColor: '#2C2C2E', justifyContent: 'center', alignSelf: 'center', alignItems: 'center', width: '90%', height: '10%', borderRadius: 20, marginTop: -90 }}>
-                <Text style={{ color: 'white', fontSize: 20 }} >
-                    Hola, mi nombre es  A L E C S
-                </Text>
-            </View>
+            <Pressable onPress={() => handlePress()} style={{ backgroundColor: 'rgba(255, 32, 110, 0.4)', justifyContent: 'center', alignSelf: 'center', alignItems: 'center', width: '90%', height: '5%', borderRadius: 20, marginTop: -100 }}>
+                {
+                    press ?
+                        <Text style={{ color: 'white', fontSize: 20 }} >
+                            Hola mi nombre es
+                        </Text>
+                        :
+                        <Text style={{ color: 'white', fontSize: 20 }} >
+                            Press here to see the translation
+                        </Text>
+                }
+            </Pressable>
 
-            <View style={{justifyContent: 'center', alignSelf: 'center', alignItems: 'center' }}>
-                <Pressable onPress={()=>console.log('Pachurradito')}>
-                    <Octicons name="unmute" size={24} color="white" />
-                </Pressable>
-            </View>
+            <Pressable onPress={playSound} style={{ backgroundColor: 'rgba(255, 32, 110, 0.4)', justifyContent: 'center', alignSelf: 'center', alignItems: 'center', width: '90%', height: '5%', borderRadius: 20, marginTop: 20 }}>
+                <Text style={{ color: 'white', fontSize: 20 }} >
+                    Press here to hear the translation
+                </Text>
+            </Pressable>
         </View>
     )
 }
